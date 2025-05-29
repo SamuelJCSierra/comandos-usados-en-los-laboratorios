@@ -1,0 +1,66 @@
+comando usados en laboratorio 2
+
+______________________________________________
+
+sudo vi /etc/NeworkManager/system-connections/ens33.nmconnection
+
+ls /etc/sysconfig/network-connection/
+
+nmcli device status
+
+sudo nmcli connection add type ethernet con-name ens36-dhcp ifname ens36 autoconnect yes
+
+sudo nmcli connection up ens36-dhcp
+
+sudo nmcli connection add type ethernet con-name ens36-static ifname ens36 ip4 192.168.1.100/24 dw4 192.168.1.1
+
+sudo nmcli connection modify ens36-static ipv4.dns "8.8.8.8 8.8.4.4"
+
+sudo nmcli connection up ens36-static
+
+
+
+Comandos usados en laboratorio 3
+
+______________________________________________
+
+sudo useradd -m Samuel
+
+sudo passwd Samuel
+
+sudo usermod -eG wheel Samuel
+
+sudo groupadd guest
+
+sudo useradd -m -G guest Samuel_Guest
+
+sudo passwd samuel_Guest
+
+sudo userdel  -r Samuel_Guest
+
+sudo groupdel guest
+
+
+
+comandos usados en el laboratorio 4
+
+_______________________________________________
+
+mkdir materia
+mkdir materia2
+cd materia
+vi estudiante.txt
+cat estudiante
+chmod 700 estudiante.txt
+chamod 070 estudiante.txt
+cp estudiantes.txt ../materia2
+cd ../materia2
+cat estudiante.txt
+cd ../materia
+rm estudiante.txt
+cd ..
+rmdir materia
+ls
+
+
+

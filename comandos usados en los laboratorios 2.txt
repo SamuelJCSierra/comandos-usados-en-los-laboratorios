@@ -1,0 +1,96 @@
+Codigos del Laboratorio 1
+
+=======================================================
+
+sudo dnf update -y
+
+sudo dnf install git make gcc -y
+
+git clone https://github.com/aristocratos/bashtop.git
+
+cd bashtop
+
+sudo make install
+
+bashtop
+
+sudo make uninstall
+
+cd bashtop
+
+rm bashtop
+
+cd ~
+
+sudo dnf autoremove -y
+
+
+
+códigos del Laboratorio 2
+
+=========================================================
+
+sudo crontab -e
+
+0 23 * * * dnf update -y && upgrade -y
+0 3 * * * /bin/shutdown -r now
+
+cd /tmp
+
+rm -rf * 
+
+ls
+
+touch borrable.txt
+
+cd ~ 
+
+echo "rm -rf /tmp/*" | at now + 1 minute
+
+
+códigos del Laboratorio 3
+
+==========================================================
+
+lsdlk
+
+sudo fdisk /dev/sda
+
+n
+
+p
+
+1
+
+2048
+
+q 
+
+lsblk
+
+sudo mkfs.ext4 /dev/sda1
+
+mkdir /home/samuel/Desktop/Disco
+
+dc Disco
+
+sudo mount /dev/sda1 /home/samuel/Desktop/Disco
+
+cd /home/samuel/Desktop/Disco
+
+sudo vi AdriaAlcantara.txt
+
+ls
+
+cd ~
+
+sudo umount /home/samuel/Desktop/Disco
+
+sudo mount /dev/sda1 /mnt
+
+cd /mnt
+
+ls -l
+
+
+
